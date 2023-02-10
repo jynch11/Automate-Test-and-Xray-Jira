@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[6.2.0, )"
             },
+            "Microsoft.Build.Framework": {
+              "target": "Package",
+              "version": "[17.4.0, )"
+            },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[7.0.0, )"

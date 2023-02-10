@@ -530,3 +530,10 @@ C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tes
 C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\obj\Debug\net6.0\Ticketing.Specs.pdb
 C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\obj\Debug\net6.0\Ticketing.Specs.genruntimeconfig.cache
 C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\obj\Debug\net6.0\ref\Ticketing.Specs.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\User\Desktop\Project Moonshot\Tutorials\Automate-Test-and-Xray-Jira\tests\Ticketing.Specs\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
