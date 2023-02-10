@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  mongoclient:
+    container_name: mongoclient
+    environment:
+      - MONGO_URL=mongodb://ticketdb:27017
+    ports:
+        - "3000:3000"
+    depends_on:
+      - ticketdb
+  ticketdb:
+    container_name: ticketdb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+  ticketing.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "5000:80"
+      - "5001:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

@@ -1,0 +1,55 @@
+<assemblies timestamp="01/30/2023 04:50:14">
+  <assembly name="C:\Users\User\Desktop\Project Moonshot\isaac-ticket\Ticketing\tests\Ticketing.Specs\bin\Debug\net6.0\Ticketing.Specs.dll" run-date="2023-01-30" run-time="04:50:14" total="2" passed="1" failed="1" skipped="0" time="88.996" errors="0">
+    <errors />
+    <collection total="2" passed="1" failed="1" skipped="0" name="Test collection for Ticketing.Specs.Features.TicketingFeature" time="1.597">
+      <test name="Display details of a ticket" type="Ticketing.Specs.Features.TicketingFeature" method="DisplayDetailsOfATicket" time="0.1072242" result="Fail">
+        <output>Given the following datas are already submitted
+  --- table step argument ---
+  | Id                       | Type             | Name       | AccountNumber | AccountName | MeterNumber | Address        | ContactNumber | OtherDetails | ORNumber   | Photos                                                                                                                                   | Status       |
+  | 63c646b0eb34447850246068 | Test Complaint   | No Water   | 12345678      | Jm Albasin  | 87654321    | C.M Recto Ext. | 09676181217   | Just a test  | 0987654321 | https://wallpapercave.com/wp/wp10279812.jpg                                                                                              | For Approval |
+  | 63c646b0eb34447850246069 | Test Complaint 2 | Water Leak | 12345678      | Jm Albasin  | 87654321    | C.M Recto Ext. | 09676181217   | Just a test  | 0987654321 | https://imageio.forbes.com/blogs-images/natalieparletta/files/2019/06/AdobeStock_234736184-by-manola72-1200x800.jpg?format=jpg&amp;width=960 | For Approval |
+-&gt; pending: TicketingStepDefinitions.GivenTheFollowingDatasAreAlreadySubmitted(&lt;table&gt;)
+When I view a ticket
+-&gt; skipped because of previous errors
+Then display all information of the ticket
+-&gt; skipped because of previous errors
+
+</output>
+        <failure>
+          <message>TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: One or more step definitions are not implemented yet.
+  TicketingStepDefinitions.GivenTheFollowingDatasAreAlreadySubmitted(&lt;table&gt;)</message>
+          <stack-trace>   at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Ticketing.Specs.Features.TicketingFeature.ScenarioCleanup()
+   at Ticketing.Specs.Features.TicketingFeature.DisplayDetailsOfATicket() in C:\Users\User\Desktop\Project Moonshot\isaac-ticket\Ticketing\tests\Ticketing.Specs\Features\Ticketing.feature:line 22</stack-trace>
+        </failure>
+        <traits>
+          <trait name="FeatureTitle" value="Ticketing" />
+          <trait name="Description" value="Display details of a ticket" />
+          <trait name="Category" value="TEST_ME-7" />
+          <trait name="Category" value="TESTSET_ME-4" />
+        </traits>
+      </test>
+      <test name="Create Ticket" type="Ticketing.Specs.Features.TicketingFeature" method="CreateTicket" time="1.4896001" result="Pass">
+        <output>When customer fills all the following datas and submits the form
+  --- table step argument ---
+  | Type       | Name     | AccountNumber | AccountName | MeterNumber | Address | ContactNumber | OtherDetails     | ORNumber | Photos                                                                            | Status       |
+  | Complaints | No Water | 1234321       | Nino        | 4321234     | Purok 5 | 09121212121   | Nothing          | 54321    | https://wallpapercave.com/wp/wp10279812.jpg                                       | For Approval |
+  | Complaints | Leakage  | 1234532       | Moonshot    | 3456788     | Brgy 3  | 09676181219   | just a test bruh | 32111    | https://www.waterindustryjournal.co.uk/wp-content/uploads/2018/02/burst-pipe.jpeg | For Approval |
+-&gt; done: TicketingStepDefinitions.WhenCustomerFillsAllTheFollowingDatasAndSubmitsTheFormAsync(&lt;table&gt;) (1.2s)
+Then a ticket should be succesfully created
+-&gt; done: TicketingStepDefinitions.ThenATicketShouldBeSuccesfullyCreatedAsync() (0.2s)
+
+</output>
+        <traits>
+          <trait name="FeatureTitle" value="Ticketing" />
+          <trait name="Description" value="Create Ticket" />
+          <trait name="Category" value="TEST_ME-3" />
+          <trait name="Category" value="TESTSET_ME-4" />
+        </traits>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

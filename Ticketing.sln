@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E6F3B91-2282-4EDB-A8CB-35A6C2576829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{59D1AB58-3420-47E8-B46E-A1BF9E22E9A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ticketing", "Ticketing", "{64B02BF0-479B-41F5-B698-B390D9BA2A90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketing.API", "src\Services\Ticketing\Ticketing.API\Ticketing.API.csproj", "{F0772403-07A9-4F6E-B1D2-6ED6474B6062}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D545B503-1C3B-4BB6-B7F5-2CDDDAB540A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C006908C-02C4-4A7E-9986-254CEE16D2E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketing.Specs", "tests\Ticketing.Specs\Ticketing.Specs.csproj", "{BBB505E2-D1A2-48F5-BE09-D5A6E97F051F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0772403-07A9-4F6E-B1D2-6ED6474B6062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0772403-07A9-4F6E-B1D2-6ED6474B6062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0772403-07A9-4F6E-B1D2-6ED6474B6062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0772403-07A9-4F6E-B1D2-6ED6474B6062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D545B503-1C3B-4BB6-B7F5-2CDDDAB540A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D545B503-1C3B-4BB6-B7F5-2CDDDAB540A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D545B503-1C3B-4BB6-B7F5-2CDDDAB540A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D545B503-1C3B-4BB6-B7F5-2CDDDAB540A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB505E2-D1A2-48F5-BE09-D5A6E97F051F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB505E2-D1A2-48F5-BE09-D5A6E97F051F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB505E2-D1A2-48F5-BE09-D5A6E97F051F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB505E2-D1A2-48F5-BE09-D5A6E97F051F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59D1AB58-3420-47E8-B46E-A1BF9E22E9A8} = {5E6F3B91-2282-4EDB-A8CB-35A6C2576829}
+		{64B02BF0-479B-41F5-B698-B390D9BA2A90} = {59D1AB58-3420-47E8-B46E-A1BF9E22E9A8}
+		{F0772403-07A9-4F6E-B1D2-6ED6474B6062} = {64B02BF0-479B-41F5-B698-B390D9BA2A90}
+		{BBB505E2-D1A2-48F5-BE09-D5A6E97F051F} = {C006908C-02C4-4A7E-9986-254CEE16D2E6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3CC531B-553E-4EBB-B30C-8682EDAC46AB}
+	EndGlobalSection
+EndGlobal

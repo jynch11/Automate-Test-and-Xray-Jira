@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+    mongoclient:
+        image: mongoclient/mongoclient
+        
+    ticketdb:
+        image: mongo
+        
+    ticketing.api:
+        image: ${DOCKER_REGISTRY-}ticketingapi
+        build:
+          context: .
+          dockerfile: src/Services/Ticketing/Ticketing.API/Dockerfile
+        
+volumes:
+  mongo_data:
